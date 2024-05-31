@@ -1,10 +1,13 @@
-function addString(str){
-   if(str.length >= 3){
-      str_len = 3;
-      back = str.substring(str.length -3);
-      return back + str + back;
-   } else{
+function checkStr(str){
+   if(str.length < 4){
       return false;
    }
+   front = str.substring(0, 4);
+   if(front == 'Java'){
+      return true;
+   } else {
+      return false;
+   }
+
 }
-console.log(addString("abcd"));
+console.log(checkStr("JavaScript"));
